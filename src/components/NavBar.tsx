@@ -11,8 +11,8 @@ function NavBar() {
         <nav className=''>
           <ul className='flex flex-wrap items-center justify-center text-gray-900'>
             <li className='mr-9'>
-              <select placeholder='Categories' className='bg-slate-50 border-none w-full p-2.5'>
-                <option value="" disabled selected>Categories</option>
+              <select placeholder='Categories' className='bg-slate-50 border-none w-full p-2.5' defaultValue={"DEFAULT"}>
+                <option value="DEFAULT" disabled>Categories</option>
                 <option value="">Flour</option>
                 <option value="">Rice</option>
                 <option value="">Sugar</option>

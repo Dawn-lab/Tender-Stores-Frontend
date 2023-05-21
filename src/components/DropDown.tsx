@@ -7,7 +7,7 @@ function DropDown() {
 
     return (
         <>
-            <button onClick={() => setIsOpen((prev: boolean) => !prev)} className='relative mr-6 p-2 flex justify-between border border-transparent active:border-green-950 rounded-lg' data-dropdown-toggle="dropdownAvatarName">
+            <button onClick={() => setIsOpen((prev: boolean) => !prev)} className='relative mr-6 p-2 flex justify-between border border-transparent active:border-green-950 rounded-lg w-44' data-dropdown-toggle="dropdownAvatarName">
                 <div>
                     <FaUser className="mr-1 p-0.5 border rounded-full border-gray-400 h-7 w-7" />
                 </div>
@@ -26,11 +26,11 @@ function DropDown() {
             </button>
             {
                 isOpen && (
-                    <div id="dropdownAvatarName" className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                        <div className="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                    <div id="dropdownAvatarName" className="absolute z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <div className="px-4 py-3 text-sm text-gray-100 dark:text-white">
                             <div className="truncate">name@flowbite.com</div>
                         </div>
-                        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
+                        <ul className="py-2 text-sm text-gray-700 dark:text-slate-200" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
                             <li>
                                 <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Account</a>
                             </li>
